@@ -2,6 +2,10 @@ FROM rocker/shiny:latest
 
 LABEL name=ContDataSumViz
 
+RUN apt-get update && apt-get install -y \
+    libssl-dev \
+    && apt-get clean
+
 COPY ./renv.lock ./renv.lock
 
 # install renv & restore packages
