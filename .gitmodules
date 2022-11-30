@@ -1,0 +1,3 @@
+[submodule "ContDataQC"]
+	path = ContDataQC
+	url = https://github.com/USEPA/ContDataQC.git

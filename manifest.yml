@@ -1,0 +1,4 @@
+---
+applications:
+- name: chase-test-ContDataSumViz
+  memory: 750M
