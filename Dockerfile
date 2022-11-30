@@ -4,6 +4,7 @@ LABEL name=ContDataSumViz
 
 RUN apt-get update && apt-get install -y \
     libssl-dev \
+    libxml2-dev \
     && apt-get clean
 
 COPY ./renv.lock ./renv.lock
