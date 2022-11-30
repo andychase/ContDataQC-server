@@ -37,7 +37,7 @@ library("tibbletime")
 library("shinyBS")
 #library("shinythemes")
 #library("shinyalert")
-library("conflicted") # fails without it
+library("conflicted")
 library("dataRetrieval")
 library("doBy")
 library("knitr")
@@ -53,8 +53,7 @@ library("ContDataQC")
 library("ContDataSumViz")
 library("StreamThermal")
 library("IHA")
-#library("XLConnect")  # remove this library because cloud.gov does not support it
-# fails without dplyr and stringr from tidyverse
+library("XLConnect")
 
 # Functions ----
 source("_moved/import_raw_data.R")
