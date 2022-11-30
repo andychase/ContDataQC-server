@@ -14,6 +14,7 @@ RUN Rscript -e 'install.packages("renv")'
 RUN Rscript -e 'renv::restore()'
 
 COPY . /app
+WORKDIR /app
 
 EXPOSE ${PORT}
 CMD ["Rscript", "run.R"]
