@@ -1,5 +1,0 @@
-FROM rocker/shiny
-
-LABEL ContDataSumViz
-
-RUN R setup.r
