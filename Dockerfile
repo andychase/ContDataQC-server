@@ -2,6 +2,9 @@ FROM rocker/shiny:latest
 
 LABEL name=ContDataSumViz
 
+# Reset mirror
+RUN sed -i -e 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//mirror:\/\/mirrors\.ubuntu\.com\/mirrors\.txt/' /etc/apt/sources.list
+
 RUN apt-get update && apt-get install -y \
     libssl-dev \
     libxml2-dev \
