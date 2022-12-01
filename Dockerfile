@@ -10,6 +10,7 @@ RUN apt-get update && apt-get install -y \
     r-cran-rjava \
     r-base-dev dh-r automake \
     libharfbuzz-dev  libfribidi-dev \
+    libfreetype6-dev \
     && apt-get clean
 
 WORKDIR /app
