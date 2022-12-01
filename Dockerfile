@@ -3,7 +3,8 @@ FROM rocker/shiny:latest
 LABEL name=ContDataSumViz
 
 # Reset mirror
-RUN sed -i -e 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//mirror:\/\/mirrors\.ubuntu\.com\/mirrors\.txt/' /etc/apt/sources.list
+RUN sed -i -e 's/http:\/\/archive\.ubuntu\.com\/ubuntu\//http:\/\/ubuntu\.osuosl\.org\/ubuntu/' /etc/apt/sources.list
+
 
 RUN apt-get update && apt-get install -y \
     libssl-dev \
