@@ -5,6 +5,10 @@ LABEL name=ContDataSumViz
 RUN apt-get update && apt-get install -y \
     libssl-dev \
     libxml2-dev \
+    libgit2-dev \
+    default-jdk \
+    r-cran-rjava \
+    r-base-dev dh-r automake \
     && apt-get clean
 
 WORKDIR /app
