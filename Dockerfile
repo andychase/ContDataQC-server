@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     default-jdk \
     r-cran-rjava \
     r-base-dev dh-r automake \
+    libharfbuzz-dev  libfribidi-dev \
     && apt-get clean
 
 WORKDIR /app
