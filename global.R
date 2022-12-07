@@ -50,9 +50,6 @@ library("shinyFiles")
 library("zip")
 library("reshape2")
 library("ContDataQC")
-library("ContDataSumViz")
-library("StreamThermal")
-library("IHA")
 library("XLConnect")
 
 # Functions ----
